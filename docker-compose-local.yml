@@ -1,6 +1,10 @@
 services:
   mypython:
-    build: ./
+    build:
+      context: ./
+      dockerfile: Dockerfile-local
+    volumes:
+      - ./:/mnt
     tty: true
     environment:
       PORT: ${PORT}
