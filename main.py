@@ -11,11 +11,11 @@ def get_image():
     img_url = \
         'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mount_Fuji_from_Mount_Aino.jpg/640px-Mount_Fuji_from_Mount_Aino.jpg'
 
-    im = imread(img_url)
+    im = imread(img_url))
 
     st.image(
         im,
-        caption='image from wikimedia commons, now at 2024/06/06 afternoon',
+        caption='image from wikimedia commons, now at 2024/06/06 afternoon with wrong code',
         use_column_width=True
     )
 
